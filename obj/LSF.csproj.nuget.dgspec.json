@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/gustavo/LSF_Backend/LSF.csproj": {}
+    "/home/gustavo/lsf/C-_prj/LSF.csproj": {}
   },
   "projects": {
-    "/home/gustavo/LSF_Backend/LSF.csproj": {
+    "/home/gustavo/lsf/C-_prj/LSF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gustavo/LSF_Backend/LSF.csproj",
+        "projectUniqueName": "/home/gustavo/lsf/C-_prj/LSF.csproj",
         "projectName": "LSF",
-        "projectPath": "/home/gustavo/LSF_Backend/LSF.csproj",
+        "projectPath": "/home/gustavo/lsf/C-_prj/LSF.csproj",
         "packagesPath": "/home/gustavo/.nuget/packages/",
-        "outputPath": "/home/gustavo/LSF_Backend/obj/",
+        "outputPath": "/home/gustavo/lsf/C-_prj/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/gustavo/.nuget/NuGet/NuGet.Config"

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "r4z2ELFhjblXqpW5Th9lxl9juuT3XT6dURo+izN99Z4=",
+  "Hash": "SOmCbfXHP+qRNsTv2HowmUdEhN/JpVm1+NxrQhakyjw=",
   "Source": "LSF",
   "BasePath": "_content/LSF",
   "Mode": "Default",
@@ -47,10 +47,10 @@
       "OriginalItemSpec": "/home/gustavo/.nuget/packages/microsoft.aspnetcore.components.quickgrid/8.0.2/staticwebassets/QuickGrid.razor.js"
     },
     {
-      "Identity": "/home/gustavo/LSF_Backend/obj/Debug/net8.0/scopedcss/bundle/LSF.styles.css",
+      "Identity": "/home/gustavo/lsf/C-_prj/obj/Debug/net8.0/scopedcss/bundle/LSF.styles.css",
       "SourceId": "LSF",
       "SourceType": "Computed",
-      "ContentRoot": "/home/gustavo/LSF_Backend/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "/home/gustavo/lsf/C-_prj/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/LSF",
       "RelativePath": "LSF.styles.css",
       "AssetKind": "All",
@@ -63,7 +63,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/gustavo/LSF_Backend/obj/Debug/net8.0/scopedcss/bundle/LSF.styles.css"
+      "OriginalItemSpec": "/home/gustavo/lsf/C-_prj/obj/Debug/net8.0/scopedcss/bundle/LSF.styles.css"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+KQSywYVMTleaGpm/fe6w8IAufCTCycZK5d3UXUVTPM+9BDoO1gu1wZ94ACPKOsIF2xJA3A8gzNBMVOoJdwnOw==",
+  "dgSpecHash": "QReP6UGL1Y/jnjXbrlLEeme4qyrbViV1oCKZBUIdyAwZWliBftj8qymt5h3PGK1VaFn1y7cQ4J/SoNbzswjCRA==",
   "success": true,
-  "projectFilePath": "/home/gustavo/LSF_Backend/LSF.csproj",
+  "projectFilePath": "/home/gustavo/lsf/C-_prj/LSF.csproj",
   "expectedPackageFiles": [
     "/home/gustavo/.nuget/packages/awssdk.core/3.7.304.11/awssdk.core.3.7.304.11.nupkg.sha512",
     "/home/gustavo/.nuget/packages/awssdk.s3/3.7.308.9/awssdk.s3.3.7.308.9.nupkg.sha512",
