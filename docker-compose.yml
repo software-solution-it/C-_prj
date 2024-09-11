@@ -1,0 +1,22 @@
+version: '3.8'
+
+volumes:
+    app-volume:
+        driver: local
+
+services:
+    lsf:
+        image: esalanguerra/lsf-app
+        ports:
+            - 8080:8080
+        volumes:
+            - app-volume:/app
+
+    nginx:
+        image: nginx:1.19.0
+        ports:
+            - 80:80
+        volumes:
+            - ./nginx.conf:/etc/nginx/nginx.conf
+        depends_on:
+            - lsf

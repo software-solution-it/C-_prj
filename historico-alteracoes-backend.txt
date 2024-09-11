@@ -1,0 +1,1472 @@
+commit bcc5344fefc2675c9448c4c71e2dde4b614dc0e1
+Author: Alan Lima da Silva Guerra <alandasilvaguerra@proton.me>
+Date:   Tue Sep 3 08:28:43 2024 -0300
+
+    docker + nginx
+
+ docker-compose.yml | 15 +++++++++++++--
+ nginx.conf         | 17 +++++++++++++++++
+ 2 files changed, 30 insertions(+), 2 deletions(-)
+
+commit fa7168b4fbadd529392f3a378b1ce67636acba4e
+Author: Alan Lima da Silva Guerra <alandasilvaguerra@proton.me>
+Date:   Tue Sep 3 07:33:25 2024 -0300
+
+    imagem docker
+
+ Dockerfile         | 29 ++++++++++++++++-------------
+ docker-compose.yml | 11 +++++++++++
+ 2 files changed, 27 insertions(+), 13 deletions(-)
+
+commit 97f9c7699c57621d24fbe6b3fb6177ea0c4acff6
+Author: Alan Lima da Silva Guerra <alandasilvaguerra@proton.me>
+Date:   Mon Sep 2 09:56:17 2024 -0300
+
+    criando endpoint para /
+
+ Program.cs  |   2 ++
+ publish.zip | Bin 22430635 -> 0 bytes
+ 2 files changed, 2 insertions(+)
+
+commit 5a975fffb25d329b2fd35c9d3fac8003d3bdd3cf
+Author: Alan Lima da Silva Guerra <alandasilvaguerra@proton.me>
+Date:   Mon Sep 2 09:09:51 2024 -0300
+
+    publicando manualmente
+
+ .github/workflows/docker-build.yml |  96 -------------------------------------
+ .gitignore                         |   1 +
+ publish.zip                        | Bin 0 -> 22430635 bytes
+ 3 files changed, 1 insertion(+), 96 deletions(-)
+
+commit fe16a7681c1d53ae17a448ae19ebd95289de25cd
+Author: Alan Lima da Silva Guerra <alandasilvaguerra@proton.me>
+Date:   Mon Sep 2 08:27:27 2024 -0300
+
+    chave ssh
+
+ .github/workflows/docker-build.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit c0c05120d08263a7d53d2561e9873036fd354377
+Author: Alan Lima da Silva Guerra <alandasilvaguerra@proton.me>
+Date:   Mon Sep 2 08:24:04 2024 -0300
+
+    alterando o token
+
+ .github/workflows/docker-build.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit ffd3bc81db0a52233b78801a82404796d3e13d5c
+Author: Alan Lima da Silva Guerra <alandasilvaguerra@proton.me>
+Date:   Mon Sep 2 08:17:37 2024 -0300
+
+    altrando imagem docker para fazer deploy no docker hub e aws
+
+ .dockerignore                      |  5 ++
+ .github/workflows/docker-build.yml | 96 ++++++++++++++++++++++++++++++++++++++
+ Dockerfile                         | 10 ++--
+ 3 files changed, 104 insertions(+), 7 deletions(-)
+
+commit 247ff8bbf17c641fc03f114dacd46675904b8f55
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Aug 23 17:09:47 2024 -0300
+
+    ajuste
+
+ Controllers/UserController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a3289671a722da50b218d8be2d1995c1abff11a9
+Author: gustavo <soaresgustavo07@hotmail.com>
+Date:   Tue Aug 20 20:56:16 2024 -0300
+
+    add feature to reset password to expire after 15 min
+
+ Controllers/ResetPasswordController.cs | 183 +++++++++++++++++++--------------
+ Controllers/UserController.cs          |   2 +-
+ 2 files changed, 109 insertions(+), 76 deletions(-)
+
+commit 4eb761fc7613614ab9a0d6b5686b8db8ca88a465
+Author: gustavo <soaresgustavo07@hotmail.com>
+Date:   Tue Aug 20 10:53:23 2024 -0300
+
+    add route profile/GetById/
+
+ Controllers/ResetPasswordController.cs |   1 +
+ Controllers/UserController.cs          | 126 +++++++++++++++++++--------------
+ 2 files changed, 75 insertions(+), 52 deletions(-)
+
+commit a0e40f32aa3685a640d0c351bc71a83417b664f2
+Merge: 4639c3b fd2f872
+Author: gustavo <soaresgustavo07@hotmail.com>
+Date:   Tue Aug 20 10:17:31 2024 -0300
+
+    Merge branch 'main' of github.com:software-solution-it/LSF_Backend
+
+commit 4639c3bb105f48861f79be026dfbd427b139ef9d
+Author: gustavo <soaresgustavo07@hotmail.com>
+Date:   Tue Aug 20 10:16:31 2024 -0300
+
+    fix confimation code/ add user/GetById
+
+ Controllers/ResetPasswordController.cs | 18 +++++++++++-------
+ 1 file changed, 11 insertions(+), 7 deletions(-)
+
+commit fd2f872eefae4b1771429d919c320dab71308600
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Aug 19 12:42:07 2024 -0300
+
+    teste
+
+ Controllers/UserController.cs | 193 ++++++++++++++++++++++++++++++------------
+ 1 file changed, 138 insertions(+), 55 deletions(-)
+
+commit 2d545b9b02e3ec3a64c153d4f019523ef9683c6c
+Author: gustavo <soaresgustavo07@hotmail.com>
+Date:   Tue Aug 13 00:30:12 2024 -0300
+
+    add feature GetById
+
+ Controllers/UserController.cs | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+
+commit 987f9e2c2791815951cce5712e05fd626fa0c19a
+Author: gustavo <soaresgustavo07@hotmail.com>
+Date:   Mon Aug 5 14:49:34 2024 -0300
+
+    fix esqueceu senha endpoint
+
+ Controllers/ResetPasswordController.cs | 74 +++++++++++++++++-----------------
+ 1 file changed, 37 insertions(+), 37 deletions(-)
+
+commit 3e0269b0415902f2634c9f22157f2aa9fd957585
+Author: gustavo <soaresgustavo07@hotmail.com>
+Date:   Fri Aug 2 13:30:13 2024 -0300
+
+    add reset password
+
+ Controllers/ResetPasswordController.cs | 267 ++++++++++++++++++++++++++++++---
+ Data/APIDbContext.cs                   |   1 +
+ Models/User_Token.cs                   |  13 ++
+ Program.cs                             |   1 -
+ 4 files changed, 264 insertions(+), 18 deletions(-)
+
+commit 1e1aa1f9cd6866867736a883de1a5a9ed61580de
+Author: gustavo <soaresgustavo07@hotmail.com>
+Date:   Tue Jul 30 06:51:14 2024 -0300
+
+    reset passaword
+
+ Controllers/ResetPasswordController.cs | 59 ++++++++++++++++++++++++++++++++++
+ Program.cs                             |  3 ++
+ 2 files changed, 62 insertions(+)
+
+commit 2e21198ffc0f5e23e644cc8b8eb2f92b6ac58ec8
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Jul 14 21:18:59 2024 -0300
+
+    teste
+
+ Controllers/PedidoController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit ef9b94c3b1a95e9c6df7c179602bbe8482ad141c
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Jul 14 21:10:33 2024 -0300
+
+    teste
+
+ Controllers/PedidoController.cs | 59 ++++++++++++++++++++---------------------
+ Models/PedidoResponse.cs        |  4 +--
+ 2 files changed, 31 insertions(+), 32 deletions(-)
+
+commit 200dcc2cb84e1262805ab328c9474264edd5cc00
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Jul 14 20:41:51 2024 -0300
+
+    teste
+
+ Controllers/PedidoController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e03ab4d45e073ee96b3871b3013948f88e86c1fc
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Jul 14 20:41:02 2024 -0300
+
+    teste
+
+ Controllers/PedidoController.cs | 23 +++++++++++++++++------
+ Models/PedidoResponse.cs        |  9 +++++++++
+ 2 files changed, 26 insertions(+), 6 deletions(-)
+
+commit 7ad6e41b88737751c89a29bc72f1eae7fd4e88f2
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Jul 14 20:03:44 2024 -0300
+
+    teste
+
+ Controllers/PedidoController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1934f3e86761b0b069de3391c83999646d1158eb
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Jul 14 19:20:45 2024 -0300
+
+    teste
+
+ Controllers/PedidoController.cs | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 86a60252d55cff0fa57d8715f1c18a45275507e5
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Jul 14 18:49:56 2024 -0300
+
+    teste
+
+ Controllers/PedidoController.cs | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 25771eef58f425fa6a9fea88e7c02bcbb564c946
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Jul 14 18:36:06 2024 -0300
+
+    teste
+
+ Controllers/PedidoController.cs | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 32362d3a60e0107f9ac5b257f61945a18fdbfe41
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Jul 14 18:12:13 2024 -0300
+
+    teste
+
+ Controllers/PedidoController.cs | 50 ++++++++++++++++++-----------------------
+ 1 file changed, 22 insertions(+), 28 deletions(-)
+
+commit 32e48136eea9bd60c2af6a6e7ea3f1ce15914d3a
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Jul 14 18:07:48 2024 -0300
+
+    teste
+
+ Controllers/PedidoController.cs | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+commit 43569261687bf8496ed9573ccc2223fae920507b
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Jul 14 17:55:37 2024 -0300
+
+    teste
+
+ Controllers/GeolocationController.cs | 16 ----------------
+ Controllers/PedidoController.cs      | 37 ++++++++++++++++++++++++++++++++++++
+ 2 files changed, 37 insertions(+), 16 deletions(-)
+
+commit 36790eb3380e51565f84d5fdfd2a2228e27b7cfb
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Jul 14 17:37:18 2024 -0300
+
+    teste
+
+ Controllers/GeolocationController.cs | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+commit 7bcaa131b4b9dbaf630a8516c40d758ab6d543d1
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Jul 14 17:35:36 2024 -0300
+
+    teste
+
+ Controllers/GeolocationController.cs | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+commit e57605673a6f2d2b845b708a2c27ada022675416
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jul 8 22:52:35 2024 -0300
+
+    docker
+
+ Properties/launchSettings.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e57e21db50fbadc3e8a56faaa91018821f607f7b
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jul 8 22:46:22 2024 -0300
+
+    docker
+
+ Properties/launchSettings.json | 14 ++++++++++++--
+ 1 file changed, 12 insertions(+), 2 deletions(-)
+
+commit 22b6a250dad91619a392d38ef8425cf53d46595f
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jul 8 22:42:18 2024 -0300
+
+    docker
+
+ Properties/launchSettings.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 0e4d68e5eda06d3a3d68306986f9d375ccb96ca9
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jul 8 19:56:31 2024 -0300
+
+    docker
+
+ Controllers/OpenAIController.cs | 26 +++++++++++++-------------
+ 1 file changed, 13 insertions(+), 13 deletions(-)
+
+commit 99c2bfd9ded2ed7cea37cf400b150647352cce61
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jul 8 19:40:19 2024 -0300
+
+    docker
+
+ Program.cs | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit 19c716dd99eed3791d6786cd997bc4d6cb239df6
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jul 8 17:44:27 2024 -0300
+
+    docker
+
+ Program.cs                     | 16 +---------------
+ Properties/launchSettings.json | 12 +-----------
+ 2 files changed, 2 insertions(+), 26 deletions(-)
+
+commit 4225b4239a58d7e4d42e39787c796abb6277fe93
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jul 8 17:00:21 2024 -0300
+
+    docker
+
+ Program.cs                     | 2 +-
+ Properties/launchSettings.json | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit af8c7b489ec6a8df46e96b7959a93698001ee13a
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jul 8 16:42:56 2024 -0300
+
+    docker
+
+ Dockerfile | 19 +++++++++++++++----
+ 1 file changed, 15 insertions(+), 4 deletions(-)
+
+commit cde322b768e73f8717b756942ff8b99bcb585903
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jul 8 16:28:44 2024 -0300
+
+    docker
+
+ Dockerfile                     | 21 +++++++++++++++++++++
+ Program.cs                     |  2 +-
+ Properties/launchSettings.json |  2 +-
+ 3 files changed, 23 insertions(+), 2 deletions(-)
+
+commit 20165cb2eb1236da8b1e9b1d3e904930ffeebef8
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jul 8 14:40:32 2024 -0300
+
+    bot de suporte
+
+ Controllers/OpenAIController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e72a859ab0d15853f16f46d0a92f80a52f9f8c15
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jul 8 13:44:03 2024 -0300
+
+    bot de suporte
+
+ Controllers/OpenAIController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit beeeb570a01ef6382b962716edfc548f8c275c35
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jul 8 13:33:27 2024 -0300
+
+    bot de suporte
+
+ Controllers/OpenAIController.cs      | 235 +++++++++++++++++++++++++++++++++++
+ Controllers/SalesReportController.cs |  90 +++++++++-----
+ Controllers/UserController.cs        |   7 +-
+ LSF.csproj                           |   1 +
+ Models/InputRequest.cs               |   7 ++
+ Models/SalesReport.cs                |  78 +++++++++---
+ Models/User.cs                       |   2 +
+ 7 files changed, 367 insertions(+), 53 deletions(-)
+
+commit 1c63c91734bbece0f0ede0a8a8479963e3402004
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jun 24 12:32:04 2024 -0300
+
+    notification
+
+ Controllers/NotificationController.cs | 88 +++++++++++++++++++++++++++++++++++
+ Controllers/UserController.cs         | 24 ++++++++--
+ Data/APIDbContext.cs                  |  1 +
+ Models/Notification.cs                | 16 +++++++
+ 4 files changed, 124 insertions(+), 5 deletions(-)
+
+commit d0c835bfab21943f079c2f30afebb4b3ce437389
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jun 17 13:39:52 2024 -0300
+
+    isActive User
+
+ Controllers/UserController.cs | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 93febe0f9fcd63eb30bc44b5a97512cb8561e0b1
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jun 17 13:38:49 2024 -0300
+
+    isActive User
+
+ Models/User.cs | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 208578bb03b82d55606e98f4480541121f0cae9f
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Jun 14 14:10:58 2024 -0300
+
+    path
+
+ Controllers/HotmartController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2681ba57dd334421e86d620679745626db67dc66
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Jun 14 14:07:12 2024 -0300
+
+    path
+
+ Controllers/HotmartController.cs | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 79039af0a71781ac4c953a6099f175e7aac3243d
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Jun 14 14:00:19 2024 -0300
+
+    path
+
+ Controllers/HotmartController.cs | 108 +++++++++++++++++++--------------------
+ 1 file changed, 53 insertions(+), 55 deletions(-)
+
+commit 532789ec529862218bc075a3ec0d560dec0c2447
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Jun 14 13:55:23 2024 -0300
+
+    path
+
+ Controllers/HotmartController.cs | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+commit 9ef388e29af4a9f125e8a105b82dddea94e39575
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Jun 14 13:47:20 2024 -0300
+
+    path
+
+ Controllers/HotmartController.cs | 31 ++++++++++++++++++++++---------
+ 1 file changed, 22 insertions(+), 9 deletions(-)
+
+commit 4ce83731a896c517f0445aeb5525ac43f31252b7
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Jun 14 13:40:10 2024 -0300
+
+    path
+
+ Controllers/HotmartController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 104a9ebdf1a1cf6942d74eba7098bdd43974d84a
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Jun 14 13:36:43 2024 -0300
+
+    path
+
+ Controllers/HotmartController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 66351a4bcf67b54b6656c1d62cfde4a313659fac
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Jun 14 13:28:08 2024 -0300
+
+    path
+
+ Controllers/HotmartController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1d0ce162d87288ea21398a7d8b3caaf21b76948d
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Jun 14 13:26:49 2024 -0300
+
+    path
+
+ Controllers/HotmartController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 9a2bdf239ae33a131cc143e3679ee30f7b6db608
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Jun 14 12:07:10 2024 -0300
+
+    ajustes path
+
+ Controllers/HotmartController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 23fcd05acc462a9b28f243f3341cef77dfde344e
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Jun 14 11:56:42 2024 -0300
+
+    ajuste path
+
+ Controllers/HotmartController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f269a86adee2f8131219d6a9c99dd1ae41ded975
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Jun 14 05:45:34 2024 -0300
+
+    reset-pass
+
+ Controllers/UserController.cs | 67 +++++++++++++++++++++++++++++++++++++++----
+ Models/User.cs                |  2 ++
+ 2 files changed, 63 insertions(+), 6 deletions(-)
+
+commit 94536f74139f98357c736b991f1d9c0691e1bfec
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Thu Jun 13 19:20:00 2024 -0300
+
+    template
+
+ Controllers/HotmartController.cs |  41 +++++++++++---
+ Controllers/ProjectController.cs |  22 ++++++++
+ LSF.csproj                       |   3 +
+ Program.cs                       |   4 +-
+ Template/Email.html              | 117 +++++++++++++++++++++++++++++++++++++++
+ 5 files changed, 177 insertions(+), 10 deletions(-)
+
+commit f0cd93f7265428d022d73640650f1f2a0cd93a3d
+Merge: 84c5c45 4d135e8
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Tue Jun 11 04:02:24 2024 -0300
+
+    Merge branch 'main' of https://github.com/software-solution-it/LSF_Backend
+
+commit 84c5c45a58c11b838c15dbea51650101cb3b3dd9
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Tue Jun 11 03:57:45 2024 -0300
+
+    ajustes finos
+
+ Controllers/BotErrorController.cs                  |   2 +-
+ Controllers/ElectricController.cs                  |  56 ++++
+ Controllers/FileController.cs                      |  90 ++++++
+ Controllers/GeolocationController.cs               |  42 +--
+ Controllers/InaugurationController.cs              |  71 -----
+ Controllers/MandalaController.cs                   | 125 +++++++++
+ Controllers/PointController.cs                     |  19 +-
+ Controllers/ProductController.cs                   |   2 +-
+ Controllers/ProjectController.cs                   | 145 ++++++++++
+ Controllers/SalesReportController.cs               |   2 +-
+ Controllers/SupplierController.cs                  |  50 ++--
+ Controllers/TechnicianController.cs                |  26 +-
+ Controllers/UserController.cs                      | 303 +++++++--------------
+ Controllers/UserGeolocationController.cs           |  34 ++-
+ Controllers/UserPointController.cs                 |  32 +--
+ Controllers/UserSupplierController.cs              |  32 +--
+ Controllers/UserTechnicianController.cs            |  32 +--
+ Data/APIDbContext.cs                               |  26 +-
+ LSF.csproj                                         |   1 +
+ Models/File.cs                                     |  16 ++
+ Models/Geolocation.cs                              |   2 +
+ Models/Mandala.cs                                  |  64 +++++
+ Models/Point.cs                                    |   3 +
+ Models/{Inauguration.cs => Project.cs}             |   6 +-
+ Models/Project_Electric.cs                         |  15 +
+ Models/Project_File.cs                             |  16 ++
+ ...{User_Geolocation.cs => Project_Geolocation.cs} |  10 +-
+ Models/{User_Point.cs => Project_Point.cs}         |  11 +-
+ Models/{User_Product.cs => Project_Product.cs}     |   6 +-
+ Models/{User_Supplier.cs => Project_Supplier.cs}   |  10 +-
+ .../{User_Technician.cs => Project_Technician.cs}  |   9 +-
+ Models/Supplier.cs                                 |   2 +
+ Models/Technician.cs                               |   2 +
+ Models/User.cs                                     |   5 +-
+ Models/UserRole.cs                                 |   3 -
+ Models/User_Inauguration.cs                        |  19 --
+ Program.cs                                         |  21 +-
+ appsettings.json                                   |   8 +-
+ 38 files changed, 841 insertions(+), 477 deletions(-)
+
+commit 4d135e8cca36b13d157b2f89a4a0eee2eef44574
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Jun 3 06:38:51 2024 -0300
+
+    teste
+
+ Controllers/UserController.cs | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+commit 70707ab824bcc06951bb6286b389271d5d2688c2
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri May 17 16:32:42 2024 -0300
+
+    time
+
+ Controllers/UserController.cs | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit 4f9a2e6beb6dfb81dd37ad8c8c93cc77ee3b5713
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri May 17 16:31:22 2024 -0300
+
+    time
+
+ Models/BotError.cs       | 2 --
+ Models/Geolocation.cs    | 2 --
+ Models/Inauguration.cs   | 3 ---
+ Models/Point.cs          | 2 --
+ Models/ProductDomain.cs  | 2 --
+ Models/Roles.cs          | 2 --
+ Models/Supplier.cs       | 3 ---
+ Models/SupplierDomain.cs | 2 --
+ Models/Technician.cs     | 3 ---
+ Models/User.cs           | 1 -
+ 10 files changed, 22 deletions(-)
+
+commit ab6502d7b125e16eff682824ac0be8b05b80261d
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri May 17 16:07:57 2024 -0300
+
+    time
+
+ Controllers/HotmartController.cs | 66 ++++++++++++++++++++++------------------
+ Models/BotError.cs               |  4 +--
+ Models/Geolocation.cs            |  4 +--
+ Models/Inauguration.cs           |  4 +--
+ Models/Point.cs                  |  4 +--
+ Models/ProductDomain.cs          |  4 +--
+ Models/Roles.cs                  |  4 +--
+ Models/Supplier.cs               |  4 +--
+ Models/SupplierDomain.cs         |  4 +--
+ Models/Technician.cs             |  4 +--
+ Models/User.cs                   |  4 +--
+ 11 files changed, 57 insertions(+), 49 deletions(-)
+
+commit 946f7197f0df24bed2bc99f7bdca3a3e65a6b44e
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon May 13 18:00:00 2024 -0300
+
+    createdAt
+
+ Controllers/UserController.cs | 4 +++-
+ Models/BotError.cs            | 2 ++
+ Models/Geolocation.cs         | 2 ++
+ Models/Inauguration.cs        | 3 +++
+ Models/Point.cs               | 2 ++
+ Models/ProductDomain.cs       | 2 ++
+ Models/Roles.cs               | 2 ++
+ Models/Supplier.cs            | 3 +++
+ Models/SupplierDomain.cs      | 2 ++
+ Models/Technician.cs          | 3 +++
+ Models/User.cs                | 2 ++
+ 11 files changed, 26 insertions(+), 1 deletion(-)
+
+commit a042033ba821f99b1aaaabbed5a2c26086cd3623
+Merge: bfc2100 65c0ad9
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Apr 22 10:47:58 2024 -0300
+
+    Merge branch 'main' of https://github.com/software-solution-it/LSF_Backend
+
+commit bfc210071c06696169a2a09123a0650a402b70d5
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Apr 22 10:47:07 2024 -0300
+
+    Reports
+
+ Controllers/SalesReportController.cs | 146 +++++++++++++++++++++++++++++++++++
+ Data/APIDbContext.cs                 |   1 +
+ Models/SalesReport.cs                |  40 ++++++++++
+ 3 files changed, 187 insertions(+)
+
+commit 65c0ad9ee7db26c92e091f7590f880de4b3daee8
+Merge: ff883a5 d732e35
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Apr 21 17:13:47 2024 -0300
+
+    ajustes
+
+commit ff883a57c7b0610e98103069dbef5a3b88ccd283
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sun Apr 21 17:11:58 2024 -0300
+
+    ajustes
+
+ Controllers/HotmartController.cs | 38 +++++++++++++++++++++++---------------
+ Controllers/UserController.cs    | 14 ++++++++------
+ 2 files changed, 31 insertions(+), 21 deletions(-)
+
+commit d732e350a303c0b2b9384a0cda98c1061f1d5101
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 17 18:07:09 2024 -0300
+
+    Technician update
+
+ Controllers/TechnicianController.cs | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit c50d45f02479b1e45bf3539c493674552797c36a
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 17 17:36:13 2024 -0300
+
+    Technician update
+
+ Controllers/TechnicianController.cs | 56 +++++++++++++++++++++++++------------
+ 1 file changed, 38 insertions(+), 18 deletions(-)
+
+commit e561fe9643b4a75f2357dfe3d14924598d6b0ab4
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 17 15:47:11 2024 -0300
+
+    Supplier and Product Change
+
+ Controllers/ProductController.cs  | 26 ++++++++++++++++++++++++++
+ Controllers/SupplierController.cs | 29 +++++++++++++++++++++++++++--
+ Models/ProductDomain.cs           |  2 ++
+ 3 files changed, 55 insertions(+), 2 deletions(-)
+
+commit 701ff13f153da1c8fd0f56fe5e3f593bf363c4fb
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 17 12:28:44 2024 -0300
+
+    Bug supplier
+
+ Controllers/SupplierController.cs | 5 +++--
+ Models/Supplier.cs                | 1 +
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+commit edd78001405fc4bb770edb82481e0fc888b2e653
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Apr 16 20:02:46 2024 -0300
+
+    Database changes
+
+ Controllers/SupplierController.cs | 32 +++++++++++++++++++++++++++++---
+ Controllers/UserController.cs     | 33 ++++++++++++++++++++++++++++-----
+ Data/APIDbContext.cs              |  4 ++++
+ Models/ProductDomain.cs           | 16 ++++++++++++++++
+ Models/Supplier.cs                |  9 ++++++---
+ Models/SupplierDomain.cs          | 12 ++++++++++++
+ Models/User_Product.cs            | 24 ++++++++++++++++++++++++
+ 7 files changed, 119 insertions(+), 11 deletions(-)
+
+commit 1fa6c7bba4dde4e4cb3a1afa2c29f682e8d7f016
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Apr 16 11:14:05 2024 -0300
+
+    Adding BotErrors
+
+ Controllers/BotErrorController.cs | 36 +++++++++++++++++++++++++++++
+ Data/APIDbContext.cs              |  1 +
+ Models/BotError.cs                | 14 ++++++++++++
+ Program.cs                        | 12 +++++++++-
+ Service/ExcelService.cs           | 48 +++++++++++++++++++++++++++++++++++++++
+ 5 files changed, 110 insertions(+), 1 deletion(-)
+
+commit 581fa70a731c8cdbc5a17c0e34c88fcf6f0beff6
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Apr 15 12:05:53 2024 -0300
+
+    Error Inauguration
+
+ Controllers/InaugurationController.cs | 6 +++---
+ Data/APIDbContext.cs                  | 2 +-
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 55671fece00f544d90a683f33d87327fd79a675b
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Fri Apr 12 18:10:45 2024 -0300
+
+    Inauguration
+
+ Controllers/InaugurationController.cs | 71 +++++++++++++++++++++++++++++++++++
+ Controllers/UserController.cs         | 10 ++---
+ Data/APIDbContext.cs                  |  2 +
+ Models/Inauguration.cs                | 10 +++++
+ Models/User_Inauguration.cs           | 19 ++++++++++
+ 5 files changed, 107 insertions(+), 5 deletions(-)
+
+commit fe02a4dbdcf15e5e26707c6f0a6a21a3dcd0415f
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Fri Apr 12 17:23:11 2024 -0300
+
+    Ajuste de Email
+
+ Controllers/HotmartController.cs | 6 +++---
+ Controllers/UserController.cs    | 6 +++---
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+commit 592e0c2343f38690cea94fa9976a6c1d11104fd5
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Fri Apr 12 15:02:50 2024 -0300
+
+    Adding receipt on getbyid
+
+ Controllers/UserController.cs | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 285dc2beefabb7771ab7601fe88ea7a521be274a
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Thu Apr 11 19:04:55 2024 -0300
+
+    ajustes user
+
+ Controllers/UserController.cs | 56 +++++++++++++++++++++++++++++--------------
+ 1 file changed, 38 insertions(+), 18 deletions(-)
+
+commit 27a5d22090ea019bfa9f1d243a25595e0497b123
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Thu Apr 11 14:20:22 2024 -0300
+
+    Adding ReceiptConfirmed
+
+ Controllers/UserController.cs | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 6e8db816cd6a8fc27b4cea1ca5ceabaf22e701b9
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 10 20:28:04 2024 -0300
+
+    Null teste
+
+ Controllers/UserController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 4416b0ed85af01ec84ab6efe4825ed37e4f96749
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 10 20:22:32 2024 -0300
+
+    Put User
+
+ Controllers/UserController.cs | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit befc60f4c2af189081489c90b27842c171a6c5e0
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 10 19:47:20 2024 -0300
+
+    Adding forms
+
+ Controllers/UserController.cs | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+commit 14d00061790ad506b56648d6aa6d1869f012724e
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 10 19:41:16 2024 -0300
+
+    Fix bug senha
+
+ Controllers/UserController.cs | 57 ++++++-------------------------------------
+ 1 file changed, 8 insertions(+), 49 deletions(-)
+
+commit 22d9cd89e3e2047b6620a49b4a5d244ac8ac960c
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 10 18:16:01 2024 -0300
+
+    Hash password
+
+ Controllers/UserController.cs | 36 ++++++++++++------------------------
+ 1 file changed, 12 insertions(+), 24 deletions(-)
+
+commit 4c52bd34baa654b62bea9069a05d113a7b45e483
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 10 18:05:13 2024 -0300
+
+    Fix bug
+
+ Controllers/UserController.cs | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+commit 6404b8857ee9c1845e8b26af0ab374f999d93fcd
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 10 16:12:47 2024 -0300
+
+    Register with hash
+
+ Controllers/HotmartController.cs |  2 +-
+ Controllers/UserController.cs    | 67 +++++++++++++++++++++++++++++++++++++++-
+ Models/User.cs                   |  1 +
+ 3 files changed, 68 insertions(+), 2 deletions(-)
+
+commit 60e934e8f49ae7655b44b0864600595594a37aa7
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 10 16:03:53 2024 -0300
+
+    Password validation with Hash
+
+ Controllers/HotmartController.cs | 21 ++++++++++++++++++++-
+ Controllers/UserController.cs    | 36 ++++++++++++++++++++++++++++--------
+ 2 files changed, 48 insertions(+), 9 deletions(-)
+
+commit cdeaa88fc4cd21863db868f153a780db839b6c7b
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 10 15:49:10 2024 -0300
+
+    Receipt name change
+
+ Controllers/UserController.cs | 10 +++++-----
+ Models/User.cs                |  2 +-
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+commit b626dfc0085b3cac403d0a9d2da82a77dddfba93
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 10 15:45:41 2024 -0300
+
+    Receipt change
+
+ Controllers/UserController.cs | 1 +
+ Models/User.cs                | 3 ++-
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+commit 08618d85da090f76912e442b6203290c1fc28708
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Apr 8 14:36:13 2024 -0300
+
+    Put User
+
+ Controllers/UserController.cs | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+
+commit e911efc4f3c146e583a2274a0843c9995b0c1e24
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Apr 8 13:10:34 2024 -0300
+
+    Put controller
+
+ Controllers/UserController.cs | 3 +++
+ Models/User.cs                | 1 -
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+commit 380e47fa22708d78c11c57cae37cbc48ed40984e
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Apr 8 11:23:07 2024 -0300
+
+    User getid
+
+ Controllers/UserController.cs | 25 +++++++++++++++++++++----
+ 1 file changed, 21 insertions(+), 4 deletions(-)
+
+commit 89bbbc041af3a4babad9825bf06d7087f72ffce1
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Apr 8 11:14:16 2024 -0300
+
+    User get
+
+ Controllers/UserController.cs | 19 +++++++++++++++++--
+ 1 file changed, 17 insertions(+), 2 deletions(-)
+
+commit 1722bca8acae6574c1c4d38e06fa0ce5f357c6e2
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Apr 8 11:01:39 2024 -0300
+
+    GetId
+
+ Controllers/UserController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 9d6f214e256be15fbb5d5711ec9a04c514841be6
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Apr 8 10:56:34 2024 -0300
+
+    UserController
+
+ Controllers/UserController.cs | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+commit 8cf26628678f1f384190d3620d9dec7401a84edb
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Apr 8 10:30:00 2024 -0300
+
+    Login
+
+ Controllers/UserController.cs | 13 ++-----------
+ 1 file changed, 2 insertions(+), 11 deletions(-)
+
+commit ee0645cdfb3f40d05b8c2a4737bdfe7edbdc549e
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Apr 8 08:54:59 2024 -0300
+
+    Hotmart
+
+ Controllers/HotmartController.cs | 157 ++++++++++++++++++++++++++++++++++++---
+ Controllers/UserController.cs    |  12 ---
+ Models/User.cs                   |   3 -
+ appsettings.json                 |   2 +-
+ 4 files changed, 146 insertions(+), 28 deletions(-)
+
+commit 4cca2a0bf843523428486b7b4073431d231c7701
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Apr 5 14:54:28 2024 -0300
+
+    ajuste
+
+ Controllers/HotmartController.cs |  1 +
+ Controllers/UserController.cs    | 28 ++++++++++++++++++++--------
+ Models/User.cs                   | 14 ++++++++++++++
+ 3 files changed, 35 insertions(+), 8 deletions(-)
+
+commit 401ab83f54ac91fc4106087180c12924bb6dcc17
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Fri Apr 5 10:36:31 2024 -0300
+
+    ajustes
+
+ Controllers/CustomerController.cs |   2 +-
+ Controllers/HotmartController.cs  |   6 +-
+ Controllers/UserController.cs     |  39 ++++++++++++-
+ LSF.csproj                        |   5 ++
+ LSF.http                          |   2 +-
+ Models/Customer.cs                |  14 +++++
+ Models/HotmartWebHook.cs          | 117 +++++++++++++++++++++++++++++++++++++
+ Models/Purchase.cs                | 118 --------------------------------------
+ Models/User.cs                    |   1 +
+ Properties/launchSettings.json    |   4 +-
+ 10 files changed, 181 insertions(+), 127 deletions(-)
+
+commit 7723047b7abc196daec90783d278147211f3e44a
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Thu Apr 4 17:11:39 2024 -0300
+
+    ajustes finos
+
+ Controllers/CustomerController.cs        | 38 +++++++++++++++
+ Controllers/GeolocationController.cs     | 26 ++++++++++-
+ Controllers/HotmartController.cs         |  4 +-
+ Controllers/PointController.cs           | 20 ++++++--
+ Controllers/SupplierController.cs        | 23 +++++++---
+ Controllers/TechnicianController.cs      | 20 ++++++--
+ Controllers/UserController.cs            | 79 +++++++++++++++++++++-----------
+ Controllers/UserGeolocationController.cs |  1 +
+ Controllers/UserPointController.cs       |  1 +
+ Controllers/UserSupplierController.cs    |  1 +
+ Controllers/UserTechnicianController.cs  |  1 +
+ Models/Roles.cs                          |  9 ----
+ Models/Supplier.cs                       | 16 +++----
+ Models/Technician.cs                     |  4 +-
+ Models/UserRole.cs                       | 11 +++++
+ Models/User_Geolocation.cs               |  2 +-
+ Models/User_Point.cs                     |  2 +-
+ Models/User_Supplier.cs                  |  2 +-
+ Models/User_Technician.cs                |  2 +-
+ 19 files changed, 194 insertions(+), 68 deletions(-)
+
+commit 214ade001a9788e156068c82d0c547afeb3a43ad
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Thu Apr 4 15:16:37 2024 -0300
+
+    Roles adding
+
+ Controllers/UserController.cs                      |  57 +-
+ Controllers/UserGeolocationController.cs           |   2 +-
+ Controllers/UserPointController.cs                 |   2 +-
+ Controllers/UserSupplierController.cs              |   2 +-
+ Controllers/UserTechnicianController.cs            |   2 +-
+ Data/APIDbContext.cs                               |  30 +-
+ Migrations/20240318230809_Primeira.Designer.cs     | 358 -------------
+ Migrations/20240318230809_Primeira.cs              | 315 -----------
+ Migrations/20240319143249_Segunda.Designer.cs      | 585 ---------------------
+ Migrations/20240319143249_Segunda.cs               | 207 --------
+ ...240404163652_Add-Migration Primeiro.Designer.cs | 410 +++++++++++++++
+ .../20240404163652_Add-Migration Primeiro.cs       | 366 +++++++++++++
+ Migrations/APIDbContextModelSnapshot.cs            | 407 ++++++++++++++
+ Models/Roles.cs                                    |  15 +-
+ Models/User.cs                                     |   4 +-
+ Program.cs                                         |   2 +
+ appsettings.json                                   |   2 +-
+ 17 files changed, 1272 insertions(+), 1494 deletions(-)
+
+commit f9bc4ef62a91b8756c50da402658284418428a14
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 3 17:41:08 2024 -0300
+
+    Post to Put
+
+ Controllers/UserController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 410f2e9cdc79029f9f57050a4012286287ff57c5
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Apr 3 17:32:23 2024 -0300
+
+    Sending email
+
+ Controllers/UserController.cs | 207 +++++++++++++++++++++---------------------
+ Models/User.cs                |   1 +
+ Service/ExcelService.cs       |  50 +++++-----
+ 3 files changed, 127 insertions(+), 131 deletions(-)
+
+commit 30ede78282b69a1b3c98519b97db71a48a712e62
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Apr 1 17:44:33 2024 -0300
+
+    Adjusting controller
+
+ Controllers/TechnicianController.cs | 16 ++++++++
+ Controllers/UserController.cs       | 73 ++++++++++++++++++++++++-------------
+ Models/Roles.cs                     | 11 ++++++
+ 3 files changed, 75 insertions(+), 25 deletions(-)
+
+commit 94909560fa4156d75be9e3d6cbfbf1256689a00c
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Apr 1 12:26:36 2024 -0300
+
+    Mudança na estrutura do BD
+
+ Controllers/EmpresaController.cs         | 104 ------
+ Controllers/FornecedorController.cs      | 110 ------
+ Controllers/GeolocalizacaoController.cs  | 111 ------
+ Controllers/GeolocationController.cs     | 105 ++++++
+ Controllers/LavanderiaController.cs      | 103 ------
+ Controllers/MaquinaController.cs         | 104 ------
+ Controllers/MaquinaLavarController.cs    | 104 ------
+ Controllers/MarcaController.cs           | 104 ------
+ Controllers/MarcaEmpresaController.cs    | 104 ------
+ Controllers/MunicipioController.cs       | 104 ------
+ Controllers/PointController.cs           | 103 ++++++
+ Controllers/SupplierController.cs        | 107 ++++++
+ Controllers/TechnicianController.cs      | 111 ++++++
+ Controllers/TecnicosController.cs        | 108 ------
+ Controllers/UserController.cs            | 252 ++++++-------
+ Controllers/UserGeolocationController.cs | 101 ++++++
+ Controllers/UserPointController.cs       |  99 ++++++
+ Controllers/UserSupplierController.cs    | 101 ++++++
+ Controllers/UserTechnicianController.cs  |  99 ++++++
+ Data/APIDbContext.cs                     |  27 +-
+ LSF.csproj                               |   3 +-
+ Migrations/APIDbContextModelSnapshot.cs  | 582 -------------------------------
+ Models/Empresa.cs                        |  18 -
+ Models/Fornecedor.cs                     |  14 -
+ Models/Geolocalizacao.cs                 |  18 -
+ Models/Geolocation.cs                    |  21 ++
+ Models/Lavanderia.cs                     |  20 --
+ Models/Maquina.cs                        |  14 -
+ Models/MaquinaLavar.cs                   |  13 -
+ Models/Marca.cs                          |  12 -
+ Models/MarcaEmpresa.cs                   |  12 -
+ Models/Municipio.cs                      |  12 -
+ Models/Point.cs                          |  17 +
+ Models/RegisterCustom.cs                 |  10 -
+ Models/Supplier.cs                       |  23 ++
+ Models/Technician.cs                     |  25 ++
+ Models/Tecnicos.cs                       |  15 -
+ Models/User.cs                           |  23 +-
+ Models/User_Geolocation.cs               |  24 ++
+ Models/User_Point.cs                     |  24 ++
+ Models/User_Supplier.cs                  |  24 ++
+ Models/User_Technician.cs                |  24 ++
+ Program.cs                               |  29 +-
+ Service/ExcelService.cs                  | 266 +++++++-------
+ appsettings.json                         |   2 +-
+ 45 files changed, 1298 insertions(+), 2108 deletions(-)
+
+commit f00301e2dd4a013dd2939c3fc5d892bc18dd4059
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Thu Mar 28 19:23:03 2024 -0300
+
+    Login validations
+
+ Controllers/UserController.cs | 198 ++++++++++++++++++++++++++++++------------
+ 1 file changed, 143 insertions(+), 55 deletions(-)
+
+commit 60c0d6ac29366145d592d84b5b4ea0dd1c8f33e0
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Mar 27 15:55:47 2024 -0300
+
+    Fixed pdf user
+
+ Controllers/UserController.cs | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 7f10b6692a0101f5ea9dfd7c33fbbaa7fd71cd49
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Wed Mar 27 15:29:14 2024 -0300
+
+    Fixing geo e adding pdf and image upload
+
+ Controllers/UserController.cs | 99 +++++++++++++++++++++++++++++++++++++++++++
+ Models/Geolocalizacao.cs      |  2 +-
+ 2 files changed, 100 insertions(+), 1 deletion(-)
+
+commit 13d3257728c43d59a0e57afe3043baa903d9c52c
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Mar 26 18:20:37 2024 -0300
+
+    Adding post purchase
+
+ Controllers/HotmartController.cs | 13 +++----------
+ 1 file changed, 3 insertions(+), 10 deletions(-)
+
+commit a8dc1b7b84f4de4cc78a1e69837493b56a07ea0c
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Mar 26 18:18:04 2024 -0300
+
+    Adicionando endpoint purchase
+
+ Controllers/HotmartController.cs | 43 ++++++++++++++++++++++++++++++++++++++++
+ Program.cs                       |  6 ------
+ 2 files changed, 43 insertions(+), 6 deletions(-)
+
+commit 3f019446c3044530c81baca672ec6fecb5950021
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Mar 26 18:10:42 2024 -0300
+
+    Post purchase
+
+ Program.cs | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit bf063b407b01df1a82edc1daa9386555943fa236
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Mar 26 18:07:04 2024 -0300
+
+    Get hotmart
+
+ Program.cs | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit cf3159bdf8594258e1e75593ebd93df0f5fb4d34
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Mar 26 17:58:28 2024 -0300
+
+    Revert
+
+ Program.cs | 4 ----
+ 1 file changed, 4 deletions(-)
+
+commit 8773bb5d847d044fa88d9c294e3e0c69563ffc76
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Mar 26 17:55:36 2024 -0300
+
+    Purchase endpoint
+
+ Models/Purchase.cs | 118 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Program.cs         |   5 +++
+ 2 files changed, 123 insertions(+)
+
+commit 3ea0e29ec4e3c4fbde53b89a8f003e710d4ebfd6
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Mar 26 12:11:42 2024 -0300
+
+    Id int
+
+ Controllers/UserController.cs | 11 ++++-------
+ 1 file changed, 4 insertions(+), 7 deletions(-)
+
+commit ae767368510143444e31b7ed99fd8a67e6a382bb
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Mar 26 12:09:39 2024 -0300
+
+    Put update
+
+ Controllers/UserController.cs | 20 ++++++++++++--------
+ 1 file changed, 12 insertions(+), 8 deletions(-)
+
+commit 1aaf45cf1a2e0b8426409f3af9b66c75df921edf
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Mar 26 11:06:42 2024 -0300
+
+    Errors
+
+ Data/APIDbContext.cs | 2 +-
+ Program.cs           | 8 ++++----
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+commit cb7673b03c06f02b68a076f331992f039f4f7d2f
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Mar 26 10:54:05 2024 -0300
+
+    Error handling
+
+ Controllers/UserController.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 06857ff556483c8664a475c484e351b57e116f42
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Mar 26 10:52:54 2024 -0300
+
+    int id
+
+ Models/User.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 9b4ad663fcc1a66f8122238e6f355f8ddcb75c6b
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Tue Mar 26 08:51:15 2024 -0300
+
+    Ajustes geral
+
+ Controllers/EmpresaController.cs                   | 50 +++++++++----------
+ ...odutosController.cs => FornecedorController.cs} | 24 ++++-----
+ Controllers/GeolocalizacaoController.cs            | 57 ++++++++++++----------
+ Controllers/UserController.cs                      | 55 +++++++++++++--------
+ Data/APIDbContext.cs                               |  2 +-
+ Models/{Produtos.cs => Fornecedor.cs}              |  2 +-
+ Models/Geolocalizacao.cs                           |  8 +--
+ Models/User.cs                                     |  2 +
+ Service/ExcelService.cs                            |  6 +--
+ 9 files changed, 116 insertions(+), 90 deletions(-)
+
+commit 761a9999c414f63398f980a78a029316d199401a
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Mar 25 21:07:46 2024 -0300
+
+    remocao esteira
+
+ .github/workflows/build.yml | 22 ----------------------
+ 1 file changed, 22 deletions(-)
+
+commit c75f6236cc7a8ca7ccae8b0cf10569416cbdcda6
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Mon Mar 25 21:04:40 2024 -0300
+
+    Alterações autenticação
+
+ .github/workflows/build.yml         |  22 +++
+ Controllers/LavanderiaController.cs |   3 +-
+ Controllers/ProdutosController.cs   |   2 +
+ Controllers/UserController.cs       | 343 +++++++++---------------------------
+ LSF.csproj                          |   2 +
+ Models/TokenResponse.cs             |  14 ++
+ Models/User.cs                      |   2 -
+ Program.cs                          |  49 +++++-
+ appsettings.json                    |   4 +
+ 9 files changed, 172 insertions(+), 269 deletions(-)
+
+commit 05b86ca3280f43c37067cdfedf21184d1b1a3e5f
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Mar 25 11:58:57 2024 -0300
+
+    Remove workflows
+
+ .github/workflows/build.yml | 22 ----------------------
+ 1 file changed, 22 deletions(-)
+
+commit a48ad619f23f693f1c48307e9e534454cf701ad8
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Mon Mar 25 11:25:25 2024 -0300
+
+    Try catch exception
+
+ Controllers/UserController.cs | 62 ++++++++++++++++++++++++-------------------
+ 1 file changed, 35 insertions(+), 27 deletions(-)
+
+commit 7f5b77116d9bf589a489c322db6c4eff16ad0419
+Author: Gabriel Ribeiro Da Silva Santos <gabrielsantos.new@gmail.com>
+Date:   Sun Mar 24 09:45:35 2024 -0300
+
+    E-mail and Login ajuste
+
+ Controllers/UserController.cs | 280 ++++++++++++++++++++++++++++++++++++------
+ Models/User.cs                |   2 +
+ 2 files changed, 246 insertions(+), 36 deletions(-)
+
+commit f8ffbc424090af253e2eaadb96081fc5eccff36c
+Author: Software Solution <138021848+software-solution-it@users.noreply.github.com>
+Date:   Sat Mar 23 18:22:13 2024 -0300
+
+    esteira  CI
+
+ .github/workflows/build.yml | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+
+commit c1a687e1511f5a508c0af726f5e2ccbda15dbe81
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sat Mar 23 18:08:34 2024 -0300
+
+    alteracao swagger global
+
+ Program.cs | 11 ++---------
+ 1 file changed, 2 insertions(+), 9 deletions(-)
+
+commit 520cfd55cc12b59114a244c32d5fa64c172b96d3
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sat Mar 23 18:05:53 2024 -0300
+
+    alteracao swagger
+
+ Program.cs | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 61a58386cbf3f910a3ea3fdbe5285aa5050735b1
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Sat Mar 23 14:49:35 2024 -0300
+
+    ajustes
+
+ Program.cs       | 26 --------------------------
+ appsettings.json |  2 +-
+ dotnet           |  0
+ 3 files changed, 1 insertion(+), 27 deletions(-)
+
+commit c6118875cf3b5ac30519e3de1faea5330a916711
+Author: DESKTOP-01ILGOI\conta <contato@software-solution-it.com>
+Date:   Thu Mar 21 17:56:51 2024 -0300
+
+    backend
+
+ .gitignore                                     |  31 ++
+ Controllers/EmpresaController.cs               | 104 +++++
+ Controllers/GeolocalizacaoController.cs        | 104 +++++
+ Controllers/LavanderiaController.cs            | 104 +++++
+ Controllers/MaquinaController.cs               | 104 +++++
+ Controllers/MaquinaLavarController.cs          | 104 +++++
+ Controllers/MarcaController.cs                 | 104 +++++
+ Controllers/MarcaEmpresaController.cs          | 104 +++++
+ Controllers/MunicipioController.cs             | 104 +++++
+ Controllers/ProdutosController.cs              | 108 +++++
+ Controllers/TecnicosController.cs              | 108 +++++
+ Controllers/UserController.cs                  | 209 +++++++++
+ Data/APIDbContext.cs                           |  27 ++
+ LSF.csproj                                     |  28 ++
+ LSF.http                                       |   6 +
+ LSF.sln                                        |  25 ++
+ Migrations/20240318230809_Primeira.Designer.cs | 358 +++++++++++++++
+ Migrations/20240318230809_Primeira.cs          | 315 +++++++++++++
+ Migrations/20240319143249_Segunda.Designer.cs  | 585 +++++++++++++++++++++++++
+ Migrations/20240319143249_Segunda.cs           | 207 +++++++++
+ Migrations/APIDbContextModelSnapshot.cs        | 582 ++++++++++++++++++++++++
+ Models/Empresa.cs                              |  18 +
+ Models/Geolocalizacao.cs                       |  16 +
+ Models/Lavanderia.cs                           |  20 +
+ Models/Maquina.cs                              |  14 +
+ Models/MaquinaLavar.cs                         |  13 +
+ Models/Marca.cs                                |  12 +
+ Models/MarcaEmpresa.cs                         |  12 +
+ Models/Municipio.cs                            |  12 +
+ Models/Produtos.cs                             |  14 +
+ Models/RegisterCustom.cs                       |  10 +
+ Models/Tecnicos.cs                             |  15 +
+ Models/User.cs                                 |   8 +
+ Program.cs                                     | 103 +++++
+ Properties/launchSettings.json                 |  41 ++
+ Service/ExcelService.cs                        | 134 ++++++
+ appsettings.Development.json                   |   8 +
+ appsettings.json                               |  12 +
+ 38 files changed, 3883 insertions(+)
+
+commit 31af455200c92d71fbbf8444a4a811d38dd208f1
+Author: Software Solution <138021848+software-solution-it@users.noreply.github.com>
+Date:   Thu Mar 21 17:50:54 2024 -0300
+
+    Initial commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
